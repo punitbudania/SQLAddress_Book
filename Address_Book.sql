@@ -26,3 +26,7 @@ INSERT INTO address_book (firstName, lastName, address, city, state, zip, phoneN
 
 UC_4
 UPDATE address_book SET address = "Will Colony" WHERE firstName = "Arif";
+
+UC_5
+DELETE FROM address_book WHERE id = 3;
+
