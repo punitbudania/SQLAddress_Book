@@ -30,3 +30,5 @@ UPDATE address_book SET address = "Will Colony" WHERE firstName = "Arif";
 UC_5
 DELETE FROM address_book WHERE id = 3;
 
+UC_6
+SELECT * FROM address_book WHERE city = "Puri";
