@@ -32,3 +32,6 @@ DELETE FROM address_book WHERE id = 3;
 
 UC_6
 SELECT * FROM address_book WHERE city = "Puri";
+
+UC_8
+SELECT * FROM address_book WHERE city = "Puri" ORDER BY firstName;
