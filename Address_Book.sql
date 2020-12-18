@@ -1,4 +1,19 @@
 UC_1
-CREATE DATABASE payroll_service_db;
+CREATE DATABASE address_book_service;
 SHOW DATABASES;
-USE payroll_service_db;
+USE address_book_service;
+
+UC_2
+CREATE TABLE address_book
+(
+ id INT unsigned NOT NULL AUTO_INCREMENT,
+ firstname VARCHAR(100) NOT NULL,
+ lastname VARCHAR(100) NOT NULL,
+ address VARCHAR(100) NOT NULL,
+ city VARCHAR(100) NOT NULL,
+ state VARCHAR(100) NOT NULL,
+ zip BIGINT NOT NULL,
+ phoneNo BIGINT NOT NULL,
+ email VARCHAR(100) NOT NULL,
+ PRIMARY KEY (id)
+);
