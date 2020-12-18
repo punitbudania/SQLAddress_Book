@@ -17,3 +17,11 @@ CREATE TABLE address_book
  email VARCHAR(100) NOT NULL,
  PRIMARY KEY (id)
 );
+
+UC_3
+INSERT INTO address_book (firstName, lastName, address, city, state, zip, phoneNo, email) VALUES
+ ('Rohit', 'Kumar', 'Vyas colony', 'Puri', 'Orissa', 110016, 8327342983, 'rkumar@gmail.com'),
+ ('Arif', 'Khan', 'Vikas colony', 'Jaipur', 'Rajasthan', 337801, 37602830234, 'akhan@gmail.com'),
+ ('Harkirat', 'Singh', 'Bilal colony', 'Panji', 'Goa', 327641, 48709042947, 'hsingh@gmail.com');
+
+
