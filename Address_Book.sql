@@ -39,3 +39,6 @@ SELECT COUNT(*) FROM address_book WHERE state = "Goa";
 UC_8
 SELECT * FROM address_book WHERE city = "Puri" ORDER BY firstName;
 
+UC_9
+ALTER TABLE address_book ADD bookName VARCHAR(100) NOT NULL AFTER id;
+ALTER TABLE address_book ADD type VARCHAR(100) NOT NULL AFTER bookName;
