@@ -45,3 +45,8 @@ ALTER TABLE address_book ADD type VARCHAR(100) NOT NULL AFTER bookName;
 
 UC_10
 SELECT COUNT(*) FROM address_book WHERE type = "Family";
+
+UC_11
+UPDATE address_book SET type = "Family" WHERE firstName = "Rohit";
+INSERT INTO address_book (type, firstName, lastName, address, city, state, zip, phoneNo, email) VALUES
+ ('Friend', 'Rohit', 'Kumar', 'Vyas colony', 'Puri', 'Orissa', 110016, 8327342983, 'rkumar@gmail.com');
