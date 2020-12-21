@@ -50,3 +50,23 @@ UC_11
 UPDATE address_book SET type = "Family" WHERE firstName = "Rohit";
 INSERT INTO address_book (type, firstName, lastName, address, city, state, zip, phoneNo, email) VALUES
  ('Friend', 'Rohit', 'Kumar', 'Vyas colony', 'Puri', 'Orissa', 110016, 8327342983, 'rkumar@gmail.com');
+ 
+UC_12
+CREATE TABLE contact_address
+(
+ id INT unsigned NOT NULL,
+ address VARCHAR(100) NOT NULL,
+ city VARCHAR(100) NOT NULL,
+ state VARCHAR(100) NOT NULL,
+ zip BIGINT NOT NULL,
+ phoneNo BIGINT NOT NULL,
+ email VARCHAR(100) NOT NULL,
+ FOREIGN KEY (id) REFERENCES address_book(id) ON DELETE CASCADE
+);
+CREATE TABLE types
+(
+ type_id INT NOT NULL,
+ type_name VARCHAR(100),
+ PRIMARY KEY (type_id)
+);
+alter table address_book add foreign key (type_id) references types(type_id) on delete cascade;
